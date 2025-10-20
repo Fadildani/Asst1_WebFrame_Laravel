@@ -1,0 +1,131 @@
+.film-card {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.film-card .card-img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(60%);
+}
+
+.film-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.watch-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.film-card:hover .watch-btn {
+    opacity: 1;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.news-card {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-card .card-img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(60%);
+}
+
+.news-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.read-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.news-card:hover .read-btn {
+    opacity: 1;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+.review-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 16px;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.review-card {
+    background-color: #2b2b2b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.review-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review-date {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.review-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #eaeaea;
+}
+
+.review-rating {
+    margin-top: 0.5rem;
+    color: gold;
+    font-size: 1.1rem;
+}

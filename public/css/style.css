@@ -1,0 +1,163 @@
+body {
+    background-color: #ffffff;
+    color: #fff;
+}
+/* Navbar Style */
+.navbar {
+    background-color: #FFF2EB;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+.navbar-brand img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #F49BAB;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #7F55B1; /* ungu Vision+ */
+    transform: translateY(-2px);
+}
+
+/* Icons */
+.nav-icon {
+  color: #7F55B1;
+  font-size: 1.4rem;
+  transition: all .3s;
+}
+.nav-icon:hover { color: #F49BAB; }
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#visionCarousel {
+    width: 100%;
+    margin: 0; /* hilangkan jeda atas bawah */
+}
+
+.carousel-item {
+    height: 85vh; /* tambahkan tinggi di sini, bukan di img */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* news */
+img.rounded-3 {
+  height: auto;
+  object-fit: contain;
+
+}
+
+/* news */
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar .row {
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/*  MODAL BASE STYLE  */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/*  SEARCH MODAL  */
+#searchModal .modal-header {
+  background-color: #0d6efd;
+  color: white;
+  border-bottom: none;
+}
+#searchModal .modal-body {
+  padding: 2rem;
+}
+#searchModal input {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+/*  PROFILE MODAL  */
+#profileModal .modal-content {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+#profileModal .modal-body img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#profileModal .btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+/*  THEME MODAL  */
+#themeModal .modal-content {
+  background-color: #1f1f1f;
+  color: white;
+}
+#themeModal .modal-header {
+  border-bottom: none;
+}
+#themeModal .modal-body {
+  padding: 2rem;
+}
+#themeModal .btn-outline-dark {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+#themeModal .btn-outline-dark:hover {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+.modal.fade .modal-dialog {
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
